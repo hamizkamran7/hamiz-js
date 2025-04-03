@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable for number</title>
+</head>
+
+<body>
+
+</body>
+<script> 
+var age=("i am 17 years old")
+alert(age)
+var visitCount = localStorage.getItem("visitCount");
+if (visitCount === null) {
+    visitCount = 1;
+} else {
+    visitCount = parseInt(visitCount) + 1;
+}
+localStorage.setItem("visitCount", visitCount);
+alert("You have visited this site " + visitCount + " times");
+document.write("my brith year is 2008")
+document.write("John Doe ordered 5 T-shirt(s) on XYZ Clothing store")
+</script>
+
+</html>
