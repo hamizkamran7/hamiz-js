@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Q1 
+        function showTime() {
+            var showdate = new Date ();
+            console.log(showdate);
+            
+        
+        }
+        showTime()
+        // Q2 
+        var firstName=prompt('enter your first name')
+        var lastName=prompt('enter your last name')
+
+        function fullName(firstName,lastName) {
+            var full_Name=firstName+lastName
+          console.log('welcome to our website '+full_Name);
+          
+            
+        }
+        fullName(firstName,lastName)
+
+        // Q3 
+        var num1=prompt("enter any num")
+        var num2=prompt("enter any num2")
+
+        function sum(num1,num2) {
+            var totalNum=Number(num1)+Number(num2)
+            console.log('total sum is '+totalNum); 
+        }
+        sum(num1,num2)
+
+        // Q5 
+        var user =prompt('enter any num ot get their square');
+        var toNum =Number(user)
+        function square(toNum) {
+            return toNum*toNum
+          
+        }
+        var result =square(toNum)
+        console.log(result);
+        
+        // Q11 
+        function titleCase(str) {
+  var words = str.split(' ');
+  for (var i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+  }
+  
+  return words.join(' ');
+}
+var exampleString = 'the quick brown fox';
+var result = titleCase(exampleString);
+console.log(result);
+
+    </script>
+</body>
+</html>
