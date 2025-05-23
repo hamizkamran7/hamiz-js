@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Q2 
+        var user = prompt("Write any year from 2010-2025 to check for a leap year:");
+var tyear = Number(user);
+
+function checkLeapYear(tyear) {
+    if (tyear === 2012 || tyear === 2016 || tyear === 2020 || tyear === 2024) {
+        alert(tyear + " is a leap year.");
+    } else {
+        alert(tyear + " is not a leap year.");
+    }
+}
+
+checkLeapYear(tyear);
+
+// Q4 
+var m1=0;
+var m2=0;
+var m3=0;
+
+//  average
+function getAverage(m1, m2, m3) {
+    return (m1 + m2 + m3) / 3;
+}
+
+//  percentage 
+function getPercentage(m1, m2, m3) {
+    let totalMarks = 300;
+    let obtainedMarks = m1 + m2 + m3;
+    return (obtainedMarks / totalMarks) * 100;
+}
+
+// Main function
+function mainFunction() {
+    let subject1 = +prompt("Enter marks for Subject 1:");
+    let subject2 = +prompt("Enter marks for Subject 2:");
+    let subject3 = +prompt("Enter marks for Subject 3:");
+
+    let average = getAverage(subject1, subject2, subject3);
+    let percentage = getPercentage(subject1, subject2, subject3);
+
+    console.log("Average Marks: " + average.toFixed(2));
+    console.log("Percentage: " + percentage.toFixed(2) + "%");
+}
+
+
+mainFunction();
+
+// Q8
+var km=+prompt('Enter distance between two cities (in kilometers)')
+// meter 
+function toMeter(km) {
+    return km*1000;
+}
+// inches 
+function toInches(km) {
+    return km * 39370.1;
+}
+// feet 
+function toFeet(km) {
+    return km*3280.84
+}
+// centimeter 
+function toCentimeter(km) {
+    return km* 100000
+}
+// main function 
+function mainFunction2() {
+    
+    console.log(km + " km = " + toMeter(km) + " meters");
+    console.log(km + " km = " + toFeet(km) + " feet");
+    console.log(km + " km = " + toInches(km) + " inches");
+    console.log(km + " km = " + toCentimeter(km) + " centimeters");
+}
+
+mainFunction2();
+
+    </script>
+</body>
+</html>

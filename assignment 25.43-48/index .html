@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mobile {
+            height: 150px;
+        }
+        #pic{
+            height: 300px ;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Q1  -->
+    <a href=" #" onclick="alert('welcome to this link ')">click me </a>
+
+    <!-- Q2  -->
+    <img src="img/134685_1_c1223933ae5377135bce319bd6dfba7f.webp" id="mobile" onclick="alert('You have purchase S25 ultra')">
+    <img src="img/iphone_17_pro_max_95acfd07-44a1-4cf8-90a8-e784f309befb.webp" id="mobile" onclick="alert('You have purchase Iphone 17 pro max')">
+    <img src="img/pt-galaxy-s25-s931-534566-sm-s931bzkgeub-544735796.webp" id="mobile" onclick="alert('You have purchase S24 ')">
+    <img src="img/ultramarine_1_1.jpg" id="mobile" onclick="alert('You have purchase Iphone 16 plus')" >
+
+<!-- Q3  -->
+  <table>
+        <tr>
+            <th>Name</th>
+            <th>BTN</th>
+        </tr>
+        <tr id="tr1">
+            <td>hamiz</td>
+            <td> <button onclick="deleteRow()">delete</button></td>
+        </tr>
+        <tr id="tr2">
+             <td>ali</td>
+            <td> <button onclick="deleteRow2()">delete</button></td>
+        </tr>
+        <tr id="tr3">
+             <td>shayan</td>
+            <td> <button onclick="deleteRow3()">delete</button></td>
+        </tr>
+    </table>
+
+    <!-- Q4  -->
+     <img src="img/cr7.webp" id="pic" onmouseover="changePic()" onmouseout="resetPic()">
+
+     <!-- Q5  -->
+    <h1>counter: <span id="counter">0</span></h1>
+      <button onclick="increaseCount()">increase +</button>
+      <button onclick="decreaseCount()">decrease -</button>
+
+     <script>
+        // q3 
+         function deleteRow() {
+            var del=document.getElementById('tr1')
+            del.remove();
+        }
+        function deleteRow2() {
+            var del=document.getElementById('tr2')
+            del.remove();
+        }
+        function deleteRow3() {
+            var del=document.getElementById('tr3')
+            del.remove();
+        }
+        // q4 
+    function resetPic() {
+        document.getElementById('pic').src="img/cr7.webp"
+    }
+    function changePic() {
+        document.getElementById('pic').src="img/cr7 2.jpg"
+    }
+
+//    q5 
+ let count=0 ;
+function increaseCount() {
+    count++;
+    document.getElementById('counter').textContent=count; //text-content is use to update text in html 
+}
+
+function decreaseCount() {
+    count--;
+    document.getElementById('counter').textContent=count;
+}
+    
+</script>
+</body>
+
+</html>
